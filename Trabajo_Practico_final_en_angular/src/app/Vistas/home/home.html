@@ -1,0 +1,21 @@
+<app-header></app-header>
+<h1>Bienvenidos a la tienda</h1>
+
+<section>
+    @if(cargando){
+        <p>Cargando</p>
+    }
+    @for(producto of productos;track producto.id){
+        
+        <app-card-producto
+        
+        [id] = "producto.id"
+        [title] = "producto.title"
+        [price] = "producto.price"
+        [description] = "producto.description"
+        [category] = "producto.category"
+        
+        ></app-card-producto>
+    }
+</section>
+<app-footer></app-footer>
