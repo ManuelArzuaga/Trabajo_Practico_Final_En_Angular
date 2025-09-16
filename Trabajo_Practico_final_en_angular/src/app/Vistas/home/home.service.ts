@@ -16,9 +16,6 @@ export interface ProductModel{
 export class ProductService{
 
     private url = "https://fakestoreapi.com/products"
-
-    
-    testProducts = [{ id: 1, title: "test", price: 1, description: "test", category: "test" }]
     
     constructor(private http:HttpClient){}
 
