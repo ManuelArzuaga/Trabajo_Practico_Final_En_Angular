@@ -1,22 +1,24 @@
 <app-header></app-header>
-<h1>Bienvenidos a la tienda</h1>
+<main class="container">
+    <h1 class="titulo">Bienvenidos a la tienda</h1>
 
-<section>
-    @if(cargando){
-        <p>Cargando</p>
-    }
-    @for(producto of productos;track producto.id){
+    <section class="productos">
+        @if(cargando){
+            <p class="cargando">Cargando</p>
+        }
+        @for(producto of productos;track producto.id){
         
-        <app-card-producto
+            <app-card-producto
         
-        [id] = "producto.id"
-        [title] = "producto.title"
-        [image] = "producto.image"
-        [price] = "producto.price"
-        [description] = "producto.description"
-        [category] = "producto.category"
+            [id] = "producto.id"
+            [title] = "producto.title"
+            [image] = "producto.image"
+            [price] = "producto.price"
+            [description] = "producto.description"
+            [category] = "producto.category"
         
-        ></app-card-producto>
-    }
-</section>
+            ></app-card-producto>
+        }
+    </section>
+</main>
 <app-footer></app-footer>

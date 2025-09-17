@@ -1,6 +1,8 @@
-<div [routerLink]="['/detalle-producto',id]">
-    <h3>{{title}}</h3>
-    <img [src]="image">
-    <p>Precio: {{price}}</p>
-    <p>Categoria: {{category}}</p>
+<div class = "card" [routerLink]="['/detalle-producto',id]">
+    <div class="card-body">
+        <img class = "card-img" [src]="image">
+         <h3 class="card-title">{{title}}</h3>
+        <p class="card-price">Precio: {{price}}</p>
+        <p class="card-category">Categoria: {{category}}</p>
+    </div>
 </div>

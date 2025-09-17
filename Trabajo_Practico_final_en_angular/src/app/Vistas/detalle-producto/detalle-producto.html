@@ -1,8 +1,16 @@
 <app-header></app-header>
-<h2>{{product?.title}}</h2>
-<img [src] = "product?.image">
-<p>{{product?.description}}</p>
-@if(!product){
-    <p>No se encuentra el producto</p>
-}
+<main class = "detalle-container">
+    <div class="detalle-card">
+        <img class = "detalle-img" [src] = "product?.image">
+        <div class="detalle-info">
+            <h2 class="detalle-titulo">{{product?.title}}</h2>
+            <p class = "detalle-descripcion">{{product?.description}}</p>
+        </div>
+    </div>
+    
+    @if(!product){
+        <p class="detalle-error">No se encuentra el producto</p>
+    }
+</main>
+
 <app-footer></app-footer>
