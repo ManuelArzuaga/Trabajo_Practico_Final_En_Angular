@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 export class CardProducto {
 
   @Input() id = 0
+  @Input() image = ""
   @Input() title = ""
   @Input() price = 0
   @Input() description = ""

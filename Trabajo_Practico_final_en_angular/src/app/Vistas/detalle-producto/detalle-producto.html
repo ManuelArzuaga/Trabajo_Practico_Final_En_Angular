@@ -1,5 +1,6 @@
 <app-header></app-header>
 <h2>{{product?.title}}</h2>
+<img [src] = "product?.image">
 <p>{{product?.description}}</p>
 @if(!product){
     <p>No se encuentra el producto</p>

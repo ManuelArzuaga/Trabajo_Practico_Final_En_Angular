@@ -24,7 +24,7 @@ export class Contacto {
   }
 
   onSubmit(){
-    if(this.contactForm.valid){
+    if(this.contactForm.valid){ 
       alert("Mensaje Enviado")
     }else{
       alert("Hay errores al enviar")
